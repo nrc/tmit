@@ -3,7 +3,9 @@
 A monthly newsletter on all things [TiKV](TODO).
 
 This repo is where issues of TMiT are written and saved for posterity. If you would
-like to contribute some text, please send a PR against the [next issue].
+like to contribute some text, please send a PR against the [next issue]. If you
+know of something that should be included but don't want to write about it, leave
+a comment (and preferably a link) on [this issue].
 
 If you'd like to read the current and previous issues, see TODO.
 
@@ -11,7 +13,7 @@ If you'd like to read the current and previous issues, see TODO.
 ## Process for starting a new issue
 
 * Copy [template.md](template.md) to a new file: `month-YY.md`.
-* Create a [new issue](TODO) for the new month.
+* Create a [new issue](https://github.com/nrc/tmit/issues/new) for the new month.
 * Update the links in this file.
 * Commit the changes and push or make a PR.
 
@@ -43,3 +45,4 @@ TODO
 TODO
 
 [next issue]: july-19.md
+[this issue]: https://github.com/nrc/tmit/issues/3
