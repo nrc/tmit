@@ -1,6 +1,6 @@
 # This Month In TiKV
-
-A monthly newsletter on all things [TiKV](TODO).
+T
+A monthly newsletter on all things [TiKV](https://github.com/tikv/tikv).
 
 This repo is where issues of TMiT are written and saved for posterity. If you would
 like to contribute some text, please send a PR against the [next issue]. If you
@@ -44,5 +44,5 @@ TODO
 
 TODO
 
-[next issue]: july-19.md
-[this issue]: https://github.com/nrc/tmit/issues/3
+[next issue]: august-19.md
+[this issue]: https://github.com/nrc/tmit/issues/4
