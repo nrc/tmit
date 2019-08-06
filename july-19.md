@@ -4,7 +4,7 @@ Hi! Welcome to the first ever edition of 'This Month in TiKV', covering July 201
 
 We're just getting started with the newsletter, and you should expect it to evolve as we go along. We hope to cover news and events of interest to TiKV contributors and users, significant PRs and issues in the TiKV [repo](https://github.com/tikv/tikv), and generally keep you informed of what is going on. Since this is the first issue we'll cover a few bits of news from before July.
 
-You'll find the newsletter [TODO where]() from the first week of each month. We should have a mailing list so you can receive the newsletter by email soon.
+You'll find the newsletter [on the TiKV blog](https://tikv.org/blog/) from the first week of each month. We should have a mailing list so you can receive the newsletter by email soon.
 
 [Let us know](https://github.com/nrc/tmit/issues/new) what you think!
 
@@ -69,7 +69,7 @@ We're working on making testing more reliable, adding long-running tests to our 
 
 ### Adding RPN functions
 
-TiKV supports executing SQL functions on the database using its coprocessor. We've been working to support RPN functions (TODO what are they?). In the past month we've added support for `coalesce`, `in`, `case_when`, `if`, `abs`, `multiply`, `divide`, and `date_format`.
+TiKV supports executing SQL functions on the database using its coprocessor. We've been working to support RPN (reverse polish notation) functions, which are an optimisation technique for coprocessor. In the past month we've added support for `coalesce`, `in`, `case_when`, `if`, `abs`, `multiply`, `divide`, and `date_format`.
 
 
 ### Rust client
