@@ -53,12 +53,12 @@ We've also began nailing down which features we want to include in a future TiKV
 
 ## Notable PRs
 
-* In TiKV 2.1.17 gRPC was upgraded to fix a segfault causing abnormal exits [#5441](https://github.com/tikv/tikv/pull/5441)
+* In TiKV 2.1.17 gRPC was upgraded to fix a segfault causing abnormal exits [#5441](https://github.com/tikv/tikv/pull/5441).
 * In TiKV 2.1.17 and 3.0.3 incorrect timestamps should no longer be reported from a Region [#5296](https://github.com/tikv/tikv/pull/5296).
 * In TiKV 3.0.3 a possible request drop from ReadIndex when there is no leader was fixed [#5316](https://github.com/tikv/tikv/pull/5316).
 * TiKV 2.1.16 now returns region errors when closing so the client will retry on other nodes [#4820](https://github.com/tikv/tikv/pull/4820).
 * In TiKV 3.0.2 we fixed a bug in constraint checking during insertion when pessimistic transactions are enabled [#5128](https://.github.com/tikv/tikv/pull/5128).
-* In TiKV 3.0.2 we fixed the problem that TiKV lose some logs while panicking [#5174](https://github.com/tikv/tikv/pull/5174)
+* In TiKV 3.0.2 we fixed the problem that TiKV lose some logs while panicking [#5174](https://github.com/tikv/tikv/pull/5174).
 * [@fullstop000] has a draft of Follower Replication for Raft [pingcap/raft#249](https://github.com/pingcap/raft-rs/issues/136).
 * [@nrc] opened a PR to enable both prost and rust-protobuf to be used in TiKV [#5379](https://github.com/tikv/tikv/pull/5379).
 * [@sticnarf] opened a series of PRs to begin enabling transaction support in the Rust client [tikv/client-rust#108](https://github.com/tikv/client-rust/pull/108), [tikv/client-rust#97](https://github.com/tikv/client-rust/pull/97), [tikv/client-rust#92](https://github.com/tikv/client-rust/pull/92).
@@ -88,6 +88,7 @@ Here's some of the things our contributors have been working on over the last mo
 * [@yiwu-arbug] and [Connor1996] are battle hardening Titan and incorporating feedback from some of our users.
 * [@sunxiaoguang] has been battle testing TiKV on massive, China-scale workloads at Zhihu ([See his article!](https://pingcap.com/success-stories/lesson-learned-from-queries-over-1.3-trillion-rows-of-data-within-milliseconds-of-response-time-at-zhihu/))
 * [@busyjay] and [@zhangjinpeng1987] have been evaluating bloom filters.
+* [@5kbpers], [@brson] and [@aknuds1] have begun work on the engine abstraction project.
 
 If any of these projects sound like something you'd like to contribute to, let us know on our [chat](https://tikv.org/chat) and we'll try to help you get involved.
 
@@ -147,3 +148,4 @@ For more detailed and comprehensive information about TiDB and TiKV, we have wee
 [@connor1996]: https://github.com/connor1996
 [@brson]: https://github.com/brson
 [@aknuds1]: https://github.com/aknuds1
+[@5kbpers]: https://github.com/5kbpers
