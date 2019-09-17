@@ -2,11 +2,11 @@
 
 Happy day! Welcome to the second edition of 'This Month in TiKV', covering August 2019. (Yes we know it's later than the first week of September, sorry!)
 
-The TiKV authors have been busy working on improving stability, fixing bugs, and laying out the foundations of TiKV 4.0. That's a lot to cover so lets get started!
+The TiKV authors have been busy working on improving stability, fixing bugs, and laying out the foundations of TiKV 4.0. That is a lot to cover, so let's get started!
 
 ## News
 
-This month our team made four TiKV releases! These minor releases include bugfixes and minor, backwards compatible features.
+This month our team made four TiKV minor releases! These minor releases include bug fixes and minor, backwards compatible features.
 
 You can review the changelogs here:
 
@@ -21,11 +21,11 @@ Upgrading? Please take note of these things:
 * In **3.0.2** some logs which require no manual intervention (TiKV resolves them automatically) were reduced to `INFO` level.
 * In **2.1.16** `raw_scan` and `raw_batch_scan` now supports reverse.
 
-## Reading material
+## Reading materials
 
-Here's some things our contributors have published over the last month:
+Here are some articles our contributors have published over the last month:
 
-* [@sunxiaoguang] published some details of the deployment including TiKV at Zhihu in [Lesson Learned from Queries over 1.3 Trillion Rows of Data Within Milliseconds of Response Time at Zhihu.com](https://pingcap.com/success-stories/lesson-learned-from-queries-over-1.3-trillion-rows-of-data-within-milliseconds-of-response-time-at-zhihu/), some highlights from article:
+* [@sunxiaoguang] published some details of the deployment including TiKV at Zhihu in [Lesson Learned from Queries over 1.3 Trillion Rows of Data Within Milliseconds of Response Time at Zhihu.com](https://pingcap.com/success-stories/lesson-learned-from-queries-over-1.3-trillion-rows-of-data-within-milliseconds-of-response-time-at-zhihu/). Some highlights from the article are:
     - 1.3 trillion records, growing ~3 billion per day.
     - 12 million queries processed per second at peak.
     - Sub-90ms response time.
@@ -44,7 +44,7 @@ We've also began nailing down which features we want to include in a future TiKV
 * Publish our RocksDB wrapper as `tirocks` on [crates.io](https://crates.io/crates/tirocks/).
 * Abstract our engine so that we adapt to other storage technologies and offer more flexibility.
 * Begin adopting Joint Consensus, first to allow our clusters to more safely replace nodes in running deployments.
-* Further battle-hardening and improvements to the titan storage backend.
+* Further battle-hardening and improvements to the Titan storage backend.
 * Follower Snapshot, allowing new follows to catch up to the rest of a cluster without placing load on the current leaders.
 * Support Quiescent Region, reducing the heartbeats of inactive ('cold') regions.
 * Further coprocessor support and better documentation around coprocessor functionality, making it even easier to [make your first contribution to TiKV](https://pingcap.com/blog/adding-built-in-functions-to-tikv/).
@@ -58,10 +58,11 @@ We've also began nailing down which features we want to include in a future TiKV
 * In TiKV 3.0.3 a possible request drop from ReadIndex when there is no leader was fixed [#5316](https://github.com/tikv/tikv/pull/5316).
 * TiKV 2.1.16 now returns region errors when closing so the client will retry on other nodes [#4820](https://github.com/tikv/tikv/pull/4820).
 * In TiKV 3.0.2 we fixed a bug in constraint checking during insertion when pessimistic transactions are enabled [#5128](https://.github.com/tikv/tikv/pull/5128).
-* In TiKV 3.0.2 we fixed the problem that TiKV lose some logs while panicking [#5174](https://github.com/tikv/tikv/pull/5174).
+* In TiKV 3.0.2 we fixed the problem that TiKV loses some logs while panicking [#5174](https://github.com/tikv/tikv/pull/5174).
 * [@fullstop000] has a draft of Follower Replication for Raft [pingcap/raft#249](https://github.com/pingcap/raft-rs/issues/136).
 * [@nrc] opened a PR to enable both prost and rust-protobuf to be used in TiKV [#5379](https://github.com/tikv/tikv/pull/5379).
 * [@sticnarf] opened a series of PRs to begin enabling transaction support in the Rust client [tikv/client-rust#108](https://github.com/tikv/client-rust/pull/108), [tikv/client-rust#97](https://github.com/tikv/client-rust/pull/97), [tikv/client-rust#92](https://github.com/tikv/client-rust/pull/92).
+* [@MyonKeminta] opened [#5497](https://github.com/tikv/tikv/pull/5407) and [#5390](https://github.com/tikv/tikv/pull/5390) to forward larger transaction support.
 
 ## Notable issues
 
@@ -89,6 +90,7 @@ Here's some of the things our contributors have been working on over the last mo
 * [@sunxiaoguang] has been battle testing TiKV on massive, China-scale workloads at Zhihu ([See his article!](https://pingcap.com/success-stories/lesson-learned-from-queries-over-1.3-trillion-rows-of-data-within-milliseconds-of-response-time-at-zhihu/))
 * [@busyjay] and [@zhangjinpeng1987] have been evaluating bloom filters.
 * [@5kbpers], [@brson] and [@aknuds1] have begun work on the engine abstraction project.
+* [MyonKeminta] has been driving a project to facilitate larger transactions.
 
 If any of these projects sound like something you'd like to contribute to, let us know on our [chat](https://tikv.org/chat) and we'll try to help you get involved.
 
@@ -117,7 +119,7 @@ For more detailed and comprehensive information about TiDB and TiKV, we have wee
 * [2019-08-19](https://pingcap.com/weekly/2019-08-19-tidb-weekly/)
 * [2019-08-26](https://pingcap.com/weekly/2019-08-26-tidb-weekly/)
 
-[@sunxiaoguang]: https://github.com/
+[@sunxiaoguang]: https://github.com/sunxiaoguang
 [@hoverbear]: https://github.com/hoverbear/
 [@sticnarf]: https://github.com/sticnarf/
 [@akunds1]: https://github.com/aknuds1
@@ -149,3 +151,4 @@ For more detailed and comprehensive information about TiDB and TiKV, we have wee
 [@brson]: https://github.com/brson
 [@aknuds1]: https://github.com/aknuds1
 [@5kbpers]: https://github.com/5kbpers
+[@youjiali1995]: https://github.com/youjiali1995
